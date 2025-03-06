@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login with Google</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f7f7f7;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .btn-google {
+            background-color: #db4437;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .btn-google:hover {
+            background-color: #c1351d;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Welcome to Google Login Example</h1>
+    <p>Login with Google to continue</p>
+    
+    <a href="/auth/google">
+        <button class="btn-google">Login with Google</button>
+    </a>
+
+    <div id="user-info" style="display:none;">
+        <h2>Hello, <span id="username"></span></h2>
+        <a href="/logout"><button>Logout</button></a>
+    </div>
+</div>
+
+</body>
+</html>
